@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="280.0" styleClass="shadow" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medical1.UnitController">
+   <children>
+      <ImageView fx:id="img" fitHeight="150.0" fitWidth="280.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/thietbi.jpg" />
+         </image></ImageView>
+      <HBox prefHeight="150.0" prefWidth="280.0" style="-fx-background-color: linear-gradient(to top, #CCFFFF, transparent);" stylesheets="@styles.css">
+         <children>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="150.0" prefWidth="125.0">
+               <children>
+                  <Label alignment="TOP_LEFT" prefHeight="24.0" prefWidth="108.0" text="Thiết bị">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="name" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="113.0" text="Máy đo huyết áp">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Pane prefHeight="150.0" prefWidth="91.0" />
+            <VBox alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="days" alignment="TOP_RIGHT" prefHeight="17.0" prefWidth="66.0" text="4 năm">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="price" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="29.0" prefWidth="88.0" text="1.200.000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</Pane>

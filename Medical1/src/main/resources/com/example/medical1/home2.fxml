@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" styleClass="test-background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medical1.Controller">
+    <top>
+        <HBox prefHeight="125.0" prefWidth="200.0" spacing="10.0" styleClass="border-bottom" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="123.0" prefWidth="167.0" spacing="20.0">
+                    <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@image/4204600.png" />
+                            </image>
+                        </ImageView>
+                        <Label text="Danh mục" />
+                    </children>
+                </HBox>
+                <Pane prefHeight="123.0" prefWidth="0.0" />
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #99FFFF;">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@image/2875878.png" />
+                            </image>
+                        </ImageView>
+                        <Label text="Sản phẩm" textFill="#1c90e4">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font></Label>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@image/3421951.png" />
+                            </image>
+                        </ImageView>
+                        <Label text="Kho hàng" textFill="#171717" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@image/2672909.png" />
+                            </image>
+                        </ImageView>
+                        <Label text="Bán hàng" textFill="#272828" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@image/1524539.png" />
+                            </image>
+                        </ImageView>
+                        <Label text="Đơn hàng" textFill="#232425" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@image/3106773.png" />
+                            </image>
+                        </ImageView>
+                        <Label text="Khách hàng" textFill="#1c1d1e" />
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@image/2703995.png" />
+                            </image>
+                        </ImageView>
+                        <Label text="Bảo hành" textFill="#1d1e1e" />
+                    </children>
+                </VBox>
+                <Pane prefHeight="123.0" prefWidth="33.0" />
+                <VBox alignment="CENTER" prefHeight="123.0" prefWidth="50.0" spacing="5.0">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@image/3602145.png" />
+                            </image>
+                        </ImageView>
+                        <Circle fill="DODGERBLUE" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                    </children>
+                </VBox>
+            </children>
+            <BorderPane.margin>
+                <Insets left="20.0" right="20.0" />
+            </BorderPane.margin>
+        </HBox>
+    </top>
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #99FFFF;">
+                    <children>
+                        <VBox alignment="CENTER" prefHeight="100.0" prefWidth="156.0" style="-fx-background-color: #99FFFF;">
+                            <children>
+                                <Label prefHeight="55.0" prefWidth="109.0" text="Sản phẩm" textFill="#464545">
+                                    <font>
+                                        <Font size="21.0" />
+                                    </font></Label>
+                                <Label layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="108.0" text="11 mục" textFill="#908e8e">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #99FFFF;" HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="95.0" styleClass="bottom" stylesheets="@styles.css" text="Lọc" textFill="WHITE" />
+                    </children>
+                    <padding>
+                        <Insets left="30.0" right="30.0" />
+                    </padding>
+                </HBox>
+                <ScrollPane prefHeight="580.0" prefWidth="1220.0" styleClass="test-background" stylesheets="@styles.css" VBox.vgrow="ALWAYS">
+                    <content>
+                        <GridPane fx:id="unitsGrid" prefHeight="0.0" prefWidth="0.0" styleClass="test-background" stylesheets="@styles.css">
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                        </GridPane>
+                    </content>
+                </ScrollPane>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

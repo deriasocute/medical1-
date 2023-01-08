@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1180.0" style="-fx-background-color: linear-gradient(to bottom right, #ccffff 0%, #ffffff 100%);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NhanVien.EditPersonalInformation">
+    <children>
+        <Label layoutX="372.0" layoutY="59.0" prefHeight="45.0" prefWidth="437.0" text="Chỉnh sửa thông tin cá nhân">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+        <Label fx:id="labelMaNV" layoutX="219.0" layoutY="434.0" prefHeight="21.0" prefWidth="89.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="77.0" layoutY="429.0" text="Mã nhân viên:">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="236.0" fitWidth="212.0" layoutX="77.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@image/1077063.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="389.0" layoutY="137.0" text="Họ và tên:">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="389.0" layoutY="183.0" text="Giới tính:">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="389.0" layoutY="230.0" text="Ngày sinh:">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="389.0" layoutY="277.0" text="Địa chỉ thường trú:">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="389.0" layoutY="323.0" text="CCCD:">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="389.0" layoutY="368.0" text="Số điện thoại:">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="389.0" layoutY="420.0" text="Email:">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="389.0" layoutY="466.0" text="Ngày vào làm:">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="389.0" layoutY="509.0" text="Chức vụ:">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+      <Button fx:id="saveButton" layoutX="877.0" layoutY="567.0" mnemonicParsing="false" onMouseClicked="#save_ChinhSua" prefHeight="39.0" prefWidth="99.0" style="-fx-background-color: linear-gradient(to top, #0099cc 0%, #33cccc 100%);" text="Lưu" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="1024.0" layoutY="567.0" mnemonicParsing="false" onMouseClicked="#huyMouseAction" prefHeight="39.0" prefWidth="81.0" style="-fx-background-color: linear-gradient(to top, #0099cc 0%, #33cccc 100%);" text="Hủy" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="hoTenLabel" disable="true" layoutX="622.0" layoutY="137.0" prefHeight="30.0" prefWidth="354.0" />
+      <TextField fx:id="diaChiThuongTruLabel" layoutX="622.0" layoutY="277.0" prefHeight="30.0" prefWidth="354.0" />
+      <TextField fx:id="CCCDLabel" disable="true" layoutX="622.0" layoutY="323.0" prefHeight="30.0" prefWidth="354.0" />
+      <TextField fx:id="soDienThoaiLabel" layoutX="622.0" layoutY="368.0" prefHeight="30.0" prefWidth="354.0" />
+      <TextField fx:id="emailLabel" layoutX="622.0" layoutY="420.0" prefHeight="30.0" prefWidth="354.0" />
+      <TextField fx:id="chucVuLabel" disable="true" layoutX="622.0" layoutY="509.0" prefHeight="30.0" prefWidth="354.0" />
+      <ComboBox fx:id="gioiTinhComboBox" layoutX="622.0" layoutY="186.0" prefHeight="30.0" prefWidth="156.0" />
+      <DatePicker fx:id="ngaySinhLabel" layoutX="622.0" layoutY="233.0" prefHeight="30.0" prefWidth="174.0" />
+      <DatePicker fx:id="ngayVaoLamLabel" layoutX="622.0" layoutY="466.0" prefHeight="30.0" prefWidth="174.0" />
+      <ImageView fitHeight="69.0" fitWidth="243.0" layoutX="62.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/logo10.png" />
+         </image>
+      </ImageView>
+    </children>
+</Pane>
